@@ -1,0 +1,14 @@
+.container {
+    padding: 1em;
+    color: red;
+}
+.name {
+    color: green;
+    &:after {
+        content: ': ';
+        /*display: block;*/
+    }
+}
+.points {
+    color: blue;
+}
