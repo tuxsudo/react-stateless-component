@@ -1,4 +1,4 @@
-import MyComponent from '../Component.jsx';
+import MyComponent from '../Component.js';
 import styles from '../style.css';
 import test from 'tape';
 import { shallow } from 'enzyme';
