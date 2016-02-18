@@ -4,7 +4,7 @@
   "description": "",
   "main": "Component.jsx",
   "scripts": {
-    "pretest": "NODE_ENV=test webpack --progress --colors -p",
+    "pretest": "NODE_ENV=test webpack --quiet",
     "test": "babel-node ./scripts/test-runner.js | tap-spec",
     "start": "NODE_ENV=demo webpack-dev-server --progress --colors"
   },

@@ -59,27 +59,23 @@ const base = {
 const test = {
     entry: globSync('./test/**/*.spec.js'),
     target: "node",
-
     output: {
         path: `${tmpdir()}/${pkgName}`,
         filename: "[name].spec.js"
     },
-
     externals: {
         'cheerio': 'global',
         'react/lib/ExecutionEnvironment': true,
         'react/lib/ReactContext': true
     }
-
 }
 
 const demo = {
-
-        entry: "./demo/demo.js",
-        output: {
-            path: './demo',
-            filename: "bundle.js"
-        }
+    entry: "./demo/demo.js",
+    output: {
+        path: './demo',
+        filename: "bundle.js"
+    }
 }
 
 

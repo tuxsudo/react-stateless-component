@@ -13,10 +13,3 @@ const runTest = file => {
 
 globSync(`${tmpdir()}/${pkgName}/*.spec.js`)
     .map(runTest);
-
-
-
-
-// console.log(p);
-// p.pipe(process.stdout);
-// tests.map(spawn.bind('node'))
