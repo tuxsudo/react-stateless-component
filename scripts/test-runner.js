@@ -2,8 +2,6 @@ import webpack from 'webpack';
 import memfs from 'memory-fs';
 import config, { testFiles } from '../webpack-configs/test.js';
 
-
-
 const fs = new memfs();
 
 const buildTests = () => new Promise( (resolve, reject) => {

@@ -2,10 +2,11 @@
   "name": "react-component-template",
   "version": "1.0.0",
   "description": "",
-  "main": "Component.js",
+  "main": "Component/Component.js",
   "scripts": {
     "test": "NODE_ENV=test babel-node ./scripts/test-runner.js | tap-spec",
-    "start": "NODE_ENV=demo webpack-dev-server --progress --colors"
+    "start": "NODE_ENV=demo webpack-dev-server --progress --colors",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
