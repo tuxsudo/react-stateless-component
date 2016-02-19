@@ -1,5 +1,5 @@
 import MyComponent from '../index.js';
-import styles from '../Component/style.css';
+import styles from '../Component/style.scss';
 import test from 'tape';
 import { shallow } from 'enzyme';
 

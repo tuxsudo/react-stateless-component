@@ -1,6 +1,10 @@
 .container {
     padding: 1em;
     color: red;
+
+    &__icon {
+        color: purple;
+    }
 }
 .name {
     color: green;
@@ -11,4 +15,8 @@
 }
 .points {
     color: blue;
+}
+.image {
+    display: block;
+    max-width: 3em;
 }
