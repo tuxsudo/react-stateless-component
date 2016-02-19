@@ -2,7 +2,7 @@
   "name": "react-component-template",
   "version": "1.0.0",
   "description": "",
-  "main": "Component.jsx",
+  "main": "Component.js",
   "scripts": {
     "pretest": "NODE_ENV=test webpack --quiet",
     "test": "babel-node ./scripts/test-runner.js | tap-spec",
