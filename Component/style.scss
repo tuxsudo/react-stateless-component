@@ -19,4 +19,9 @@
 .image {
     display: block;
     max-width: 3em;
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: scale(3)rotateZ(9deg);
+    }
 }
