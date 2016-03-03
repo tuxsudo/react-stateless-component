@@ -2,6 +2,14 @@
 
 React stateless component scaffolding for authoring components independent of a project.
 
+
+## Commands
+
+*   `npm start` to run a dev server to view your component as you develop
+*   `npm test` to run unit tests.
+*   `npm run lint` to lint files.
+
+
 ## Features
 
 *   es6 & stage2 support
@@ -12,15 +20,10 @@ React stateless component scaffolding for authoring components independent of a 
 
 ## Authoring
 
-Edit the [Component.js](Component/Component.js) and [style.css](Component/style.css) in the [Component](Component) directory.
+Edit the contents of the [src](src) directory. By default, the main export will be [./src/index.js](./src/index.js).
 
 
 ## Tests
 
-Tests should be written in the [test](test) folder and should be named `<whatever>.spec.js`.
-
-## Commands
-
-*   `npm start` to run a server to view your component
-*   `npm test` to run unit tests.
-*   `npm run lint` to lint files.
+*   Unit tests should be written in the [tests/unit/](tests/unit/) folder and should be named like `<whatever>.spec.js`.
+*   Functional / visual tests can be written in [tests/demo/demo.js](tests/demo/demo.js)

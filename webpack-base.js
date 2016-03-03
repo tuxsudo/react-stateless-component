@@ -1,5 +1,4 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import path from 'path';
 import cssnext from 'postcss-cssnext';
 
 export default {
@@ -30,13 +29,5 @@ export default {
     },
     postcss : [
         cssnext()
-    ],
-    devServer: {
-        contentBase: path.normalize(`${__dirname}/../demo`),
-        historyApiFallback: true,
-        hot: false,
-        inline: true,
-        progress: true,
-        compress: true
-    }
+    ]
 };
