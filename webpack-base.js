@@ -1,5 +1,6 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import cssnext from 'postcss-cssnext';
+import cssImport from 'postcss-import';
 
 export default {
     module: {
@@ -28,6 +29,7 @@ export default {
         modules: true
     },
     postcss : [
+        cssImport(),
         cssnext()
     ]
 };
