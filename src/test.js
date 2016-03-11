@@ -1,5 +1,5 @@
-import MyComponent from '../../src/index.js';
-import styles from '../../src/lib/style.css';
+import MyComponent from './index.js';
+import styles from './style.css';
 import test from 'tape';
 import { shallow } from 'enzyme';
 

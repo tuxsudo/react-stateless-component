@@ -1,3 +1,10 @@
+/*
+Component Styles:
+
+No need to Namespace or BEM, build process
+takes care of ensuring unique class names
+
+*/
 .container {
     padding: 1em;
     color: red;

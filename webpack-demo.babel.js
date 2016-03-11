@@ -3,13 +3,13 @@ import base from './webpack-base.js';
 
 export default {
     ...base,
-    entry: path.normalize(`${__dirname}/tests/demo/demo.js`),
+    entry: path.normalize(`${__dirname}/etc/demo/demo.js`),
     output: {
-        path: path.normalize(`${__dirname}/tests/demo`),
+        path: path.normalize(`${__dirname}/dist/demo`),
         filename: "bundle.js"
     },
     devServer: {
-        contentBase: path.normalize(`${__dirname}/tests/demo`),
+        contentBase: path.normalize(`${__dirname}/etc/demo`),
         historyApiFallback: true,
         hot: false,
         inline: true,

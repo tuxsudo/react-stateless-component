@@ -20,13 +20,17 @@ React stateless component scaffolding for authoring components independent of a 
 
 ## Authoring
 
-Edit the contents of the [src](src) directory. By default, the main export will be [./src/index.js](./src/index.js).
+Edit the contents of the [src](src) directory.
 
 
-## Tests
+## Files
 
-*   Unit tests should be written in the [tests/unit/](tests/unit/) folder and should be named like `<whatever>.spec.js`.
-*   Functional / visual tests can be written in [tests/demo/demo.js](tests/demo/demo.js)
+*   [./src/index.js](./src/index.js): main JSX export
+*   [./src/style.css](./src/style.css): components main style
+*   [./src/data.js](./src/data.js): the default props for the component
+*   [./src/test.js](./src/test.js): unit test for the component
+*   [./src/demo.js](./src/demo.js): a JSX demo of the component
+
 
 
 ## Required Loaders
