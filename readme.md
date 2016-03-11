@@ -27,3 +27,12 @@ Edit the contents of the [src](src) directory. By default, the main export will 
 
 *   Unit tests should be written in the [tests/unit/](tests/unit/) folder and should be named like `<whatever>.spec.js`.
 *   Functional / visual tests can be written in [tests/demo/demo.js](tests/demo/demo.js)
+
+
+## Required Loaders
+
+For this component to be consumed and bundled in a project, the project consuming this module must enable the following webpack loaders (or equivalent).
+
+*   babel-loader configured with stage2 & react, and react-require plugins
+*   style-loader, css-loader, postcss-loader, postcss-import, postcss-cssnext
+*   file-loader
