@@ -3,7 +3,6 @@ import base from './webpack-base.js';
 import fs from 'fs';
 
 
-
 export default {
     ...base,
     entry: path.normalize(`${__dirname}/src/test.js`),

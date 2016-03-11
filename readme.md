@@ -3,14 +3,9 @@
 React stateless component scaffolding for authoring components independent of a project.
 
 
-## Commands
+## Development
 
-*   `npm start` to run a dev server to view your component as you develop
-*   `npm test` to run unit tests.
-*   `npm run lint` to lint files.
-
-
-## Features
+### Features
 
 *   es6 & stage2 support
 *   unit testing via tape and enzyme
@@ -18,12 +13,20 @@ React stateless component scaffolding for authoring components independent of a 
 *   UI testing via webpack-dev-server
 
 
-## Authoring
+### Commands
+
+*   `npm start` to run a dev server to view changes during development (port:8080)
+*   `npm test` to run unit tests.
+*   `npm run lint` to lint files.
+*   `npm run ssr` to view a server-side rendered view of the component (port:8081)
+
+
+### Authoring
 
 Edit the contents of the [src](src) directory.
 
 
-## Files
+### Files
 
 *   [./src/index.js](./src/index.js): main JSX export
 *   [./src/style.css](./src/style.css): components main style

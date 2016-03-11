@@ -8,14 +8,22 @@
   "scripts": {
     "pretest": "webpack --config=./webpack-tests.babel.js --silent",
     "test": "tape ./dist/tests/**/*.js | tap-spec",
-    "start": "webpack-dev-server --config=./webpack-demo.babel.js --progress --colors",
-    "lint": "eslint src"
+    "start": "webpack-dev-server --config=./webpack-demo.babel.js --quiet --progress --colors",
+    "ssr:client": "webpack --config=./webpack-demo.babel.js",
+    "ssr:mw": "webpack --config=./webpack-express.babel.js",
+    "pressr": "npm-run-all -p ssr:*",
+    "ssr": "babel-node -- etc/server.js",
+    "lint": "eslint src",
+    "babel-node": "babel-node"
   },
-  "keywords": ["react-component"],
+  "keywords": [
+    "react-component"
+  ],
   "author": "Jared",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
+    "babel-cli": "^6.6.5",
     "babel-core": "^6.5.2",
     "babel-eslint": "^5.0.0",
     "babel-loader": "^6.2.3",
@@ -29,10 +37,12 @@
     "enzyme": "^2.0.0",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.16.1",
+    "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "glob": "^7.0.0",
     "node-sass": "^3.4.2",
+    "npm-run-all": "^1.5.2",
     "postcss-loader": "^0.8.1",
     "react-addons-test-utils": "^0.14.7",
     "sass-loader": "^3.1.2",
