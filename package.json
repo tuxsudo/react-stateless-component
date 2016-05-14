@@ -54,6 +54,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "dotenv": "^2.0.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",
     "react": "^0.14.7",

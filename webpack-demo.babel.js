@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import path from 'path';
 import base from './webpack-base.js';
 
@@ -14,6 +15,7 @@ export default {
         hot: false,
         inline: true,
         progress: true,
-        compress: true
+        compress: true,
+        port: process.env.PORT
     }
 };
