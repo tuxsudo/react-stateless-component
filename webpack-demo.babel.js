@@ -16,6 +16,7 @@ export default {
         inline: true,
         progress: true,
         compress: true,
-        port: process.env.PORT
+        port: process.env.PORT,
+        stats: 'errors-only'
     }
 };
