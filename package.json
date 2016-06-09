@@ -2,19 +2,15 @@
   "name": "react-component-template",
   "version": "1.0.0",
   "description": "A template for authoring react / JSX components independently",
-  "main": "src/index.js",
-  "jsnext:main": "src/index.js",
-  "jsx:demo": "src/demo.js",
+  "main": "src/Component.js",
+  "jsnext:main": "src/Component.js",
+  "storybook": "src/ComponentStory.js",
   "scripts": {
-    "pretest": "webpack --config=./webpack-tests.babel.js --silent",
-    "test": "tape ./dist/tests/**/*.js | tap-spec",
-    "start": "webpack-dev-server --config=./webpack-demo.babel.js --quiet --colors",
-    "ssr:client": "webpack --config=./webpack-demo.babel.js",
-    "ssr:mw": "webpack --config=./webpack-express.babel.js",
-    "pressr": "npm-run-all -p ssr:*",
-    "ssr": "babel-node -- etc/server.js",
-    "lint": "eslint src",
-    "babel-node": "babel-node"
+    "components": "start-storybook -c ./.config/storybook -p 9999",
+    "pretest": "webpack --config .config/webpack/test.js",
+    "test": "tape dist/tests/test.js | tap-spec",
+    "start": "npm run components",
+    "lint": "eslint src"
   },
   "keywords": [
     "react-component"
@@ -22,8 +18,8 @@
   "author": "Jared",
   "license": "MIT",
   "devDependencies": {
+    "@kadira/storybook": "^1.28.1",
     "autoprefixer": "^6.3.3",
-    "babel-cli": "^6.6.5",
     "babel-core": "^6.5.2",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.3",
@@ -33,31 +29,24 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "css-loader": "^0.23.1",
-    "cssnano": "^3.5.2",
     "enzyme": "^2.0.0",
     "eslint": "^2.10.1",
     "eslint-plugin-react": "^5.1.1",
-    "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "glob": "^7.0.0",
-    "node-sass": "^3.4.2",
-    "npm-run-all": "^2.1.0",
+    "null-loader": "^0.1.1",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^8.0.2",
     "postcss-loader": "^0.9.1",
     "react-addons-test-utils": "^15.0.2",
-    "sass-loader": "^3.1.2",
+    "react-dom": "^15.1.0",
     "style-loader": "^0.13.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.4.0",
-    "watch": "^0.18.0",
     "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-node-externals": "^1.2.0"
   },
   "dependencies": {
-    "dotenv": "^2.0.0",
-    "postcss-cssnext": "^2.4.0",
-    "postcss-import": "^8.0.2",
-    "react": "^15.0.2",
-    "react-dom": "^15.0.2"
+    "react": "^15.0.2"
   }
 }

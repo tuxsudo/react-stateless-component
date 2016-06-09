@@ -1,0 +1,53 @@
+.container {
+    align-items: center;
+    padding: 1em;
+    display: flex;
+}
+
+.image {
+    display: block;
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: scale(1.5)rotateZ(9deg);
+    }
+}
+
+.textWrapper {
+    padding-left: 2em;
+}
+
+.title {
+    color: darkgray;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    display: block;
+    font-size: .5em;
+    margin-top: .5em;
+    color: lightgray;
+}
+
+.text {
+    color: black;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid black;
+    margin-top: 2em;
+    outline: 0;
+    padding: 1em;
+    transition: all .2s ease-in;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(.95);
+
+    }
+}
